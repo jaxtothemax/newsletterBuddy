@@ -3,6 +3,9 @@
 Personal Telegram bot that triages newsletters into a daily digest and summarizes
 YouTube videos on demand. Runs entirely on Cloudflare Workers + D1 (free tier).
 
+> **First time setting this up?** Follow [`ONBOARDING.md`](./ONBOARDING.md) — a
+> step-by-step walkthrough from zero to a working bot (~45 min).
+
 ## Features
 
 - **Email ingest** — forward newsletters to a dedicated address; the bot extracts
