@@ -1,0 +1,5 @@
+# Copy to .dev.vars and fill in for local `wrangler dev`.
+TELEGRAM_BOT_TOKEN="123456:abcdef..."
+TELEGRAM_CHAT_ID="123456789"
+TELEGRAM_WEBHOOK_SECRET="random-string-min-16-chars"
+ANTHROPIC_API_KEY="sk-ant-..."

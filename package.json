@@ -1,0 +1,30 @@
+{
+  "name": "newsletter-buddy",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "db:create": "wrangler d1 create newsletter-buddy",
+    "db:migrate:local": "wrangler d1 migrations apply newsletter-buddy --local",
+    "db:migrate:remote": "wrangler d1 migrations apply newsletter-buddy --remote",
+    "db:console:remote": "wrangler d1 execute newsletter-buddy --remote --command",
+    "set-webhook": "node scripts/set-telegram-webhook.mjs"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.40.0",
+    "grammy": "^1.30.0",
+    "hono": "^4.6.0",
+    "postal-mime": "^2.3.0"
+  },
+  "devDependencies": {
+    "@cloudflare/vitest-pool-workers": "^0.5.0",
+    "@cloudflare/workers-types": "^4.20250101.0",
+    "typescript": "^5.6.0",
+    "vitest": "^2.1.0",
+    "wrangler": "^3.90.0"
+  }
+}
